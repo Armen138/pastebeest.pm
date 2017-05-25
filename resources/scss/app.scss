@@ -1,0 +1,15 @@
+$font-stack:    Roboto;
+$primary-color: #333;
+
+body {
+    font-family: $font-stack;
+    padding-top: 66px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
