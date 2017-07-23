@@ -8,7 +8,7 @@ BEGIN { unshift @INC, "$FindBin::Bin/../app" }
 use Mojolicious::Commands;
 
 # Assume this script lies one directory below the application's home dir
-$ENV{MOJO_HOME} =  Mojo::File->new(__FILE__)->realpath->dirname->dirname;
+$ENV{MOJO_HOME} =  Mojo::File->new($FindBin::Bin)->realpath->dirname;
 
 # Start command line interface for application
 Mojolicious::Commands->start_app('Pastebeest');
