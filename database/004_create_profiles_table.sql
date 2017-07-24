@@ -1,3 +1,6 @@
+-- 4 down
+DROP TABLE IF EXISTS profiles;
+
 -- 4 up
 
 CREATE TABLE profiles (
@@ -10,6 +13,3 @@ CREATE TABLE profiles (
 );
 
 CREATE TRIGGER profile_modified BEFORE UPDATE ON profiles FOR EACH ROW EXECUTE PROCEDURE update_modification();
-
--- 4 down
-DROP TABLE profiles;

@@ -1,3 +1,7 @@
+-- 1 down
+
+DROP FUNCTION IF EXISTS update_modification;
+
 -- 1 up
 
 SET client_encoding = 'UTF8';

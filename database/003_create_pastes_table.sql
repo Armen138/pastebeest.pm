@@ -1,3 +1,6 @@
+-- 3 down
+DROP TABLE IF EXISTS pastes;
+
 -- 3 up
 
 CREATE TABLE pastes (
@@ -13,6 +16,3 @@ CREATE TABLE pastes (
 );
 
 CREATE TRIGGER paste_modified BEFORE UPDATE ON pastes FOR EACH ROW EXECUTE PROCEDURE update_modification();
-
--- 3 down
-DROP TABLE pastes;
